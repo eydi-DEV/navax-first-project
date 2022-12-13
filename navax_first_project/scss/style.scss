@@ -1,0 +1,130 @@
+@font-face {
+    font-family: mont;
+    src: url(/files/Montserrat-Medium.ttf);
+}
+.section1{
+    background-image: url(/photos/bg-1.png);
+    height: 700px;
+}
+$primaryColor :#0D6B6A ;
+
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: mont;
+    padding-top: 20px;
+}
+
+.header__logo {
+    font-family: mont;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #000000;
+margin: 0px;
+
+}
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    width: max-content;
+    list-style: none;
+    justify-content:space-between ;
+    padding: 0;
+    margin: 0;
+    
+
+    a{
+        color: #000000;
+        text-decoration: none;
+        &:hover{
+        color:  $primaryColor;
+                }
+    }
+    font-family: mont;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+   
+
+
+}
+.menu-list__item {
+    margin:0px 30px
+}
+.register-button {
+    width: 170px;
+    height: 44px;
+    background-color: $primaryColor;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    font-family: Mont;
+}
+.section1-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 80px;
+
+}
+.section1-leftSide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.section1-leftSide__title {
+    width: 570px;
+    height: 300px;
+    left: 375px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 100px;
+}
+.changeToPrimaryColor {
+    color: $primaryColor;
+}
+.setion1-leftSide__postScript {
+    width: 500px;
+    height: 48px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #666666;
+}
+.section1-leftSide__order-button {
+    width: 229px;
+    height: 56px;
+    background-color: $primaryColor;
+    color: #FFFFFF;
+    border: none;
+    font-family: mont;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+.section1-rightSide {
+
+}
+.section1-shape {
+    width: 297px;
+    height: 228px;
+    background-color: $primaryColor;
+    position: absolute;
+    margin : -30px -27px;
+}
+.section1-rightSide__photo {
+    position: relative;
+
+}

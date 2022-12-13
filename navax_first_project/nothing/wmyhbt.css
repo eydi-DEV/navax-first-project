@@ -1,0 +1,35 @@
+.wmyhbt{
+    display: flex;
+    padding: 80px 357px 0px 357px;
+    justify-content: space-between;
+}
+.wmyhbt__text--p{
+    width: 570px;
+    height: 300px;
+    font-size: 82px;
+    font-weight: 700;
+    line-height: 100px;
+}
+.wmyhbt__photo--image{
+    width: 470px;
+    height: 484px;
+}
+.wmyhbt__photo--square{
+    width: 297px;
+    height: 228px;
+    background-color: #0D6B6A;
+    position: absolute;
+    margin: -30px;
+}
+.wmyhbt__photo--image{
+    position: relative;
+}
+.wmyhbt__text--small-p{
+    width: 570px;
+height: 48px;
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 24px;
+color: #666666;
+}
