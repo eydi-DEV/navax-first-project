@@ -2,6 +2,10 @@
   font-family: mont;
   src: url(/files/Montserrat-Medium.ttf);
 }
+@font-face {
+  font-family: monts;
+  src: url(/files/Montserrat\ Medium\ 500.ttf);
+}
 .section1 {
   background-image: url(/photos/bg-1.png);
   height: 700px;
@@ -12,12 +16,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: mont;
+  font-family: monts;
   padding-top: 20px;
 }
 
 .header__logo {
-  font-family: mont;
+  font-family: monts;
   font-style: normal;
   font-size: 28px;
   line-height: 30px;
@@ -34,7 +38,7 @@
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  font-family: mont;
+  font-family: monts;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -62,7 +66,7 @@
   font-size: 14px;
   line-height: 16px;
   border: none;
-  font-family: Mont;
+  font-family: monts;
 }
 
 .section1-content {
@@ -108,7 +112,7 @@
   background-color: #0D6B6A;
   color: #FFFFFF;
   border: none;
-  font-family: mont;
+  font-family: monts;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
