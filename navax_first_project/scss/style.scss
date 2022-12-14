@@ -1,7 +1,10 @@
 @import "variables" ;
 @import "mixins";
+*{
+    transition: all 1s ease-in;
+}
 .section1{
-    background-image: url(/navax_first_project/photos/bg-1.png);
+    background-image: url(/photos/bg-1.png);
     height: 700px;
 }
 
@@ -127,7 +130,7 @@ margin: 0px;
 .section2 {
     margin-top: 200px;
 }
-.heading {
+.heading__text {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
@@ -193,3 +196,62 @@ margin: 0px;
     margin: 194px 24px;
     
 }
+
+//section3 started
+
+
+.section3{
+    margin-top: 200px;
+}
+.container{
+    width : 100% ;
+    overflow: hidden;
+}
+
+.slider{
+    width :200%;
+    display : flex;
+}
+.comments{
+    display: flex;
+    justify-content: space-between;
+    width : calc(100% / 2 - -392px);
+
+}
+
+//loop for cards
+//card1 start
+@for $item from 1 through 4{
+    .comment-card-#{$item} {
+        display: flex;
+        flex-direction: column;
+        width: 370px;
+        height: 290px;
+        padding: 40px;
+        box-shadow: 0px 0px 10px $boxShadowColor;
+    }
+    .comment-card-#{$item}__profile {
+        display: flex;
+        flex-direction: row;
+    }
+    .comment-card-#{$item}__ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin: 0;
+        list-style: none;
+    }
+    .comment-card-#{$item}__name{
+        @include textStyle(montserrat,18px,20px,$black);
+    }
+    .comment-card-#{$item}__From{
+        @include textStyle(montserrat,14px,16px,$gray);
+    }
+    .comment-card-#{$item}__body{
+        margin-top: 20px;
+    }
+    .comment-#{$item} {
+        @include textStyle(montserrat,16px,20px,$darkGray);
+    }
+    
+} 

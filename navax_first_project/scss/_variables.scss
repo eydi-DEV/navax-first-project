@@ -1,13 +1,16 @@
 $primaryColor :#0D6B6A ;
 $bgColor : #f2f2f2;
-
+$gray : #AAAAAA;
+$darkGray : #666666;
+$black : #000000;
+$boxShadowColor : rgba(13, 107, 106, 0.1) ;
 @font-face {
     font-family: montserrat;
-    src: url(/navax_first_project/files/Montserrat-Medim.ttf);
+    src: url(/files/Montserrat-Medim.ttf);
 }$primaryFont: montserrat;
 @font-face {
     font-family: oleto;
-    src: url(/navax_first_project/files/Oleto\ DEMO.ttf);
+    src: url(/files/Oleto\ DEMO.ttf);
 }
 
 @mixin overal {
