@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -105,7 +106,8 @@
                     Thanks for your sweet words to us
                 </p>
             </div>
-            <div class="comments">
+            <div class="slider">
+            <div class="comments" id="slide">
                 <div class="comment-card-1">
                     <div class="comment-card-1__profile">
                         <img class="comment-card-1__img" src="/photos/image-1.png" alt="profile image">
@@ -134,12 +136,14 @@
                 <div class="comment-card-2">
                     <div class="comment-card-2__profile">
                         <img class="comment-card-2__img" src="/photos/image-2.png" alt="profile image">
-                        <p class="comment-card-2__name">
-                            Nika Woo
-                        </p>
-                        <p class="comment-card-2__From">
+                        <ul class="comment-card-2__ul">
+                            <li class="comment-card-2__name">
+                               Nika Woo
+                           </li>
+                           <li class="comment-card-2__From">
                             Seppi Technology Associates
-                        </p>
+                           </li>
+                       </ul>
                     </div>
                     <div class="comment-card-2__body">
                         <p class="comment-2">
@@ -156,12 +160,14 @@
                 <div class="comment-card-3">
                     <div class="comment-card-3__profile">
                         <img class="comment-card-3__img" src="/photos/image-3.png" alt="profile image">
-                        <p class="comment-card-3__name">
-                            David Anderson
-                        </p>
-                        <p class="comment-card-3__From">
-                            Riverbed Technology
-                        </p>
+                        <ul class="comment-card-3__ul">
+                            <li class="comment-card-3__name">
+                                David Anderson
+                           </li>
+                           <li class="comment-card-3__From">
+                               Solar New solutech
+                           </li>
+                       </ul>
                     </div>
                     <div class="comment-card-3__body">
                         <p class="comment-3">
@@ -178,12 +184,14 @@
                 <div class="comment-card-4">
                     <div class="comment-card-4__profile">
                         <img class="comment-card-4__img" src="/photos/image-4.png" alt="profile image">
-                        <p class="comment-card-4__name">
-                            Sara Cristian
-                        </p>
-                        <p class="comment-card-4__From">
-                            Nationwide Group
-                        </p>
+                        <ul class="comment-card-1__ul">
+                            <li class="comment-card-1__name">
+                               Sara Cristian
+                           </li>
+                           <li class="comment-card-1__From">
+                               Nationwide Group
+                           </li>
+                       </ul>
                     </div>
                     <div class="comment-card-4__body">
                         <p class="comment-4">
@@ -199,13 +207,20 @@
                     </div>
                 </div>
             </div>
+        </div>
             <div class="card-buttons">
-                <div class="card-buttons__prev">
-                    <img src="/photos/icons/icon - arrow-1.png" alt="arrow">
-                </div>
-                <div class="card-buttons__next">
-                    <img src="/photos/icons/icon - arrow-2.png" alt="arrow">
-                </div>
+                <input type="button" value="<" onclick="left()">
+                <input type="button" value=">" onclick="right()">
+                <script>
+                    function left() { 
+                        document.getElementById("slide").style.marginLeft = "-391px" ;
+                        console.log(document.getElementById("slide").style);
+                     }
+                    function right() { 
+                        document.getElementById("slide").style.marginLeft = "0px" ;
+                     }
+
+                </script>
             </div>
         </div>
     </div>
