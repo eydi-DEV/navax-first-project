@@ -1,17 +1,13 @@
 @font-face {
-  font-family: mont;
-  src: url(/files/Montserrat\ Medium\ 500.ttf);
+  font-family: montserrat;
+  src: url(/navax_first_project/files/Montserrat-Medim.ttf);
 }
 @font-face {
-  font-family: monts;
-  src: url(/files/Montserrat-Medium.ttf);
-}
-@font-face {
-  font-family: montse;
-  src: url(/files/Montserrat-Medim.ttf);
+  font-family: oleto;
+  src: url(/navax_first_project/files/Oleto\ DEMO.ttf);
 }
 .section1 {
-  background-image: url(/photos/bg-1.png);
+  background-image: url(/navax_first_project/photos/bg-1.png);
   height: 700px;
 }
 
@@ -20,12 +16,12 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  font-family: montse;
+  font-family: montserrat;
   padding-top: 20px;
 }
 
 .header__logo {
-  font-family: montse;
+  font-family: montserrat;
   font-style: normal;
   font-size: 28px;
   line-height: 30px;
@@ -37,12 +33,14 @@
 .menu-list {
   display: flex;
   flex-direction: row;
+  width: -webkit-max-content;
+  width: -moz-max-content;
   width: max-content;
   list-style: none;
   justify-content: space-between;
   padding: 0;
   margin: 0;
-  font-family: montse;
+  font-family: montserrat;
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -70,7 +68,7 @@
   font-size: 14px;
   line-height: 16px;
   border: none;
-  font-family: montse;
+  font-family: montserrat;
 }
 
 .section1-content {
@@ -100,7 +98,7 @@
   color: #0D6B6A;
 }
 
-.setion1-leftSide__postScript {
+.section1-leftSide__postScript {
   width: 500px;
   height: 48px;
   font-style: normal;
@@ -116,7 +114,7 @@
   background-color: #0D6B6A;
   color: #FFFFFF;
   border: none;
-  font-family: montse;
+  font-family: montserrat;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -135,6 +133,10 @@
   position: relative;
 }
 
+.section2 {
+  margin-top: 200px;
+}
+
 .heading {
   font-style: normal;
   font-weight: 700;
@@ -150,11 +152,25 @@
   width: 468px;
   height: 468px;
   background-color: #0D6B6A;
+  display: flex;
+  flex-direction: column;
 }
 
 .title-box__num {
-  width: 183px;
-  height: 172px;
+  font-family: oleto;
+  font-size: 250px;
+  color: #FFFFFF;
+  margin-left: 50px;
+}
+
+.titlebox__title {
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 32px;
+  color: #FFFFFF;
+  width: 368px;
+  height: 64px;
+  margin-left: 50px;
 }
 
 .team-box {
@@ -167,6 +183,31 @@
 .member {
   width: 234px;
   height: 234px;
+  background-color: #0D6B6A;
 }
 
-/*# sourceMappingURL=style.css.map */
+.member__img-woman {
+  position: relative;
+}
+.member__img-woman:hover {
+  opacity: 0.6;
+  transition: all 0.6s ease-in;
+}
+
+.member__specifications {
+  font-family: montserrat;
+  font-size: 18px;
+  line-height: 20px;
+  color: white;
+  position: absolute;
+  margin: 144px 24px;
+}
+
+.member__skils {
+  font-family: montserrat;
+  font-size: 14px;
+  line-height: 16px;
+  color: white;
+  position: absolute;
+  margin: 194px 24px;
+}/*# sourceMappingURL=style.css.map */

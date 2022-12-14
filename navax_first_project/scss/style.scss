@@ -1,41 +1,29 @@
-@font-face {
-    font-family: mont;
-    src: url(/files/Montserrat\ Medium\ 500.ttf);
-    
-}
-@font-face {
-    font-family: monts;
-    src: url(/files/Montserrat-Medium.ttf);
-}
-@font-face {
-    font-family: montse;
-    src: url(/files/Montserrat-Medim.ttf);
-}
-
+@import "variables" ;
+@import "mixins";
 .section1{
-    background-image: url(/photos/bg-1.png);
+    background-image: url(/navax_first_project/photos/bg-1.png);
     height: 700px;
 }
-$primaryColor :#0D6B6A ;
+
 
 .header{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    font-family: montse;
+    font-family: montserrat;
     padding-top: 20px;
 }
 
 .header__logo {
-    font-family: montse;
+    font-family: montserrat;
     font-style: normal;
     font-size: 28px;
     line-height: 30px;
     font-weight: 600;
     color: #000000;
 margin: 0px;
-
+ 
 }
 
 .menu-list {
@@ -46,23 +34,19 @@ margin: 0px;
     justify-content:space-between ;
     padding: 0;
     margin: 0;
-    
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
 
     a{
         color: #000000;
         text-decoration: none;
         &:hover{
-        color:  $primaryColor;
+            color:  $primaryColor;
                 }
     }
-    font-family: montse;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 20px;
-   
-
-
 }
 .menu-list__item {
     margin:0px 30px
@@ -77,7 +61,7 @@ margin: 0px;
     font-size: 14px;
     line-height: 16px;
     border: none;
-    font-family: montse;
+    font-family: montserrat;
 }
 .section1-content{
     display: flex;
@@ -103,7 +87,7 @@ margin: 0px;
 .changeToPrimaryColor {
     color: $primaryColor;
 }
-.setion1-leftSide__postScript {
+.section1-leftSide__postScript {
     width: 500px;
     height: 48px;
     font-style: normal;
@@ -118,7 +102,7 @@ margin: 0px;
     background-color: $primaryColor;
     color: #FFFFFF;
     border: none;
-    font-family: montse;
+    font-family: montserrat;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -141,7 +125,7 @@ margin: 0px;
 // section 2 started 
 
 .section2 {
-
+    margin-top: 200px;
 }
 .heading {
     font-style: normal;
@@ -157,13 +141,26 @@ margin: 0px;
     width: 468px;
     height: 468px;
     background-color: $primaryColor;
+    display: flex;
+    flex-direction:column;
+    
 }
 .title-box__num {
-    width: 183px;
-    height: 172px;
+
+    font-family: oleto;
+    font-size: 250px;
+    color: #FFFFFF;
+    margin-left: 50px;
 }
 .titlebox__title {
-
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 32px;
+    color: #FFFFFF;
+    width: 368px;
+    height: 64px;
+    margin-left: 50px;
+   
 }
 .team-box {
     display: flex;
@@ -174,13 +171,25 @@ margin: 0px;
 .member {
     width: 234px;
     height: 234px;
+    background-color: $primaryColor;
 }
-.member__img {
-
+.member__img-woman {
+    position: relative;
+    &:hover{
+        opacity: 0.6;
+        transition:all .6s ease-in
+    }
 }
 .member__specifications {
 
+    @include textStyle(montserrat,18px,20px,white);
+    position: absolute;
+    margin: 144px 24px;
+    
 }
 .member__skils {
-
+    @include textStyle(montserrat,14px,16px,white);
+    position: absolute;
+    margin: 194px 24px;
+    
 }

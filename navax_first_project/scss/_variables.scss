@@ -1,0 +1,17 @@
+$primaryColor :#0D6B6A ;
+$bgColor : #f2f2f2;
+
+@font-face {
+    font-family: montserrat;
+    src: url(/navax_first_project/files/Montserrat-Medim.ttf);
+}$primaryFont: montserrat;
+@font-face {
+    font-family: oleto;
+    src: url(/navax_first_project/files/Oleto\ DEMO.ttf);
+}
+
+@mixin overal {
+    margin: 0;
+    padding: 0;
+
+}
