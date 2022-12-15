@@ -327,10 +327,24 @@
 .quick-access-list {
     list-style: none;
     display: flex;
-}
-.quick-access-list__item {
     
 }
+.quick-access-list__item{
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+
+    a{
+        color: #000000;
+        text-decoration: none;
+        &:hover{
+            color:  $white;
+                }
+    }
+}
+
 .footer-end {
 
 }
