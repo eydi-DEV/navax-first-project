@@ -14,7 +14,7 @@
     <div class="section1">
         <div class="container">
             <header class="header">
-                <p class="header__logo">IN.DESIGN</p>
+                <p class="logo">IN.DESIGN</p>
                     <ul class="menu-list">
                         <li class="menu-list__item"><a href="#">Home</a></li>
                         <li class="menu-list__item"><a href="#">AboutUs</a></li>
@@ -209,8 +209,9 @@
             </div>
         </div>
             <div class="card-buttons">
-                <input type="button" value="<" onclick="left()">
-                <input type="button" value=">" onclick="right()">
+                <div class="card-buttons__prev-button" onclick="left()"></div>
+                <div class="card-buttons__next-button" onclick="right()"></div>
+
                 <script>
                     function left() { 
                         document.getElementById("slide").style.marginLeft = "-391px" ;
@@ -222,6 +223,58 @@
 
                 </script>
             </div>
+        </div>
+    </div>
+    <div class="section4"><img class="section4__img" src="/photos/Section - 04.png" alt=""></div>
+    <div class="section5">
+        <div class="container">
+            <footer class="footer">
+                <p class="logo">IN.DESIGN</p>
+                <p class="footer__text">We ara a lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut <br>
+                     labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud equip ex ea commodo consequat.</p>
+                <ul class="socials">
+                    <a href="#" ><li class="socials__item"><img src="/photos/icons/facebook.png" alt=""></li></a>
+                    <a href="#" ><li class="socials__item"><img src="/photos/icons/youtube.png" alt=""></li></a>
+                    <a href="#" ><li class="socials__item"><img src="/photos/icons/be.png" alt=""></li></a>
+                    <a href="#" ><li class="socials__item"><img src="/photos/icons/dribbble.png" alt=""></li></a>
+                    <a href="#" ><li class="socials__item"><img src="/photos/icons/whatsapp.png" alt=""></li></a>
+                </ul>
+                <div class="quick-access">
+                    <ul class="quick-access-list">
+                        <li class="quick-access-list__item"><a href="#"> About Us</a></li>
+                        <li class="quick-access-list__item"><a href="#">Jobs</a> </li>
+                        <li class="quick-access-list__item"><a href="#">Blog</a> </li>
+                        <li class="quick-access-list__item"><a href="#">Press</a> </li>
+                        <li class="quick-access-list__item"><a href="#">FAQ</a> </li>
+                        <li class="quick-access-list__item"><a href="#">Careers</a> </li>
+                        <li class="quick-access-list__item"><a href="#">Contact</a> </li>
+                        <li class="quick-access-list__item"><a href="#">Privacy Policy</a> </li>
+                        <li class="quick-access-list__item"><a href="#">Sitemap</a> </li>
+                        <li class="quick-access-list__item"><a href="#">Terms of Use</a> </li>
+                    </ul>
+                </div>
+                <div class="footer-end">
+                    <div class="info">
+                        <div class="info-call">
+                            <img src="/photos/icons/call.png" alt="" class="info-call__img">
+                            <div class="info-call__amounts">
+                                <p class="info-call__title">Have a question?</p>
+                                <p class="info-call__number">921 - 987 - 2433</p>
+                            </div>
+                        </div>
+                        <div class="info-mail">
+                            <img src="" alt="" class="info-mail__img">
+                            <div class="info-mail__amounts">
+                                <p class="info-mail__title">Contact us at</p>
+                                <p class="info-mail__email">mohammadeydi2020@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright">
+                        <p class="copyright__text">© 2000-2021, All rights reserved</p>
+                    </div>
+                </div>
+            </footer>
         </div>
     </div>
 </body>
