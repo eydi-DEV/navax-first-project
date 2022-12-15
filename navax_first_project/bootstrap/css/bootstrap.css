@@ -85,7 +85,7 @@ body {
 }
 
 hr {
-  margin: 1rem 0;
+  margin: 0 0;
   color: inherit;
   background-color: currentColor;
   border: 0;
@@ -149,7 +149,7 @@ h6, .h6 {
 
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
 }
 
 abbr[title],
@@ -162,14 +162,14 @@ abbr[data-bs-original-title] {
 }
 
 address {
-  margin-bottom: 1rem;
+  margin-bottom: 1;
   font-style: normal;
   line-height: inherit;
 }
 
 ol,
 ul {
-  padding-left: 2rem;
+  padding-left: 2;
 }
 
 ol,
@@ -227,14 +227,6 @@ sub {
 
 sup {
   top: -0.5em;
-}
-
-a {
-  color: #0d6efd;
-  text-decoration: underline;
-}
-a:hover {
-  color: #0a58ca;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
