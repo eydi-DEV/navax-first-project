@@ -1,5 +1,18 @@
 //section 1 start 
-
+.section1 {
+    background-image: url(/photos/bg-1.png);
+    height: 700px;
+    padding-bottom: 70px;
+    width: 100%;
+  }
+  
+  .container {
+    max-width: 1190px;
+    max-width: 1170px;
+    margin: 0 auto 0;
+  }
+  
+  
 .section1-content{
     display: flex;
     flex-direction: row;
@@ -239,6 +252,137 @@
 
 //section 4 start
 
+.section4 {
+    margin-top: 200px;
+    background-image: url(/photos/bg.png);
+    background-repeat: no-repeat;
+    width: 100%;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  
+  .section4-heading {
+    margin-top: 90px;
+  }
+  
+  .section4-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .works-titles {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  .work-title {
+    display: flex;
+    align-items: center;
+    width: 369px;
+  }
+  
+  .work-title__text {
+    font-family: montserrat;
+    font-size: 22px;
+    line-height: 28px;
+    color: #000000;
+  }
+  
+  .work-title__num {
+    font-family: montserrat;
+    font-size: 52px;
+    line-height: 28px;
+    color: #DDDDDD;
+    font-weight: 700;
+    margin-left: -30px;
+    opacity: 0.5;
+  }
+  
+  .hr {
+    position: relative;
+    top: 100px;
+  }
+  
+  .works-boxes {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .work-box {
+    display: flex;
+    width: 320px;
+    align-items: flex-start;
+    margin-top: 44px;
+    margin-right: 47px;
+  }
+  
+  .work-box__shapes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .work-box__content {
+    padding: 0px 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  
+  .work-box__title {
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+  }
+  
+  .works-boxes__image {
+    margin-top: 70px;
+  }
+  .works-boxes__image img {
+    width: 755px;
+    height: 500px;
+  }
+  
+  .consultation-box {
+    margin-top: -100px;
+    width: 870px;
+    height: 337px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 0px 0px 30px rgba(13, 107, 106, 0.1);
+  }
+  
+  .consultation-box-inputs {
+    display: flex;
+  }
+  
+  .consultation-box-inputs__text-input {
+    width: 534px;
+    height: 56px;
+    padding: 1em;
+  }
+  
+  .consultation-box-input__submit {
+    width: 206px;
+    height: 56px;
+    background-color: #0D6B6A;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: montserrat;
+    font-size: 20px;
+    line-height: 24px;
+    color: white;
+    padding: 15px, 30px;
+  }
+  
 //section 4 end
 
 //section 5 start
