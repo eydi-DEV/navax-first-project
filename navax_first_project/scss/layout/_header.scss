@@ -1,0 +1,66 @@
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: montserrat;
+    padding-top: 20px;
+}
+.header-2 {
+    display: none;
+    height: 56px;
+    width: 100%;
+    align-items:center;
+
+}
+
+.logo {
+    font-family: montserrat;
+    font-style: normal;
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 600;
+    color: #000000;
+    margin: 0px;
+ 
+}
+.logo--white{
+    color: $white;
+}
+
+
+.menu-list {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-evenly;
+    font-family: montserrat;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 20px;
+    width: 100%;
+    margin: 0 30px;
+
+    a{
+        color: #000000;
+        text-decoration: none;
+        &:hover{
+            color:  $primaryColor;
+                }
+    }
+}
+
+.register-button {
+    width: 170px;
+    height: 44px;
+    background-color: $primaryColor;
+    color: #FFFFFF;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    border: none;
+    font-family: montserrat;
+}
